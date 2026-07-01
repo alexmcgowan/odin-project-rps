@@ -16,12 +16,12 @@ function getWinner(a, b) {
 
 function getHumanChoice(round) {
     let num = (round + 1);
-    let humChoice = toLowerCase(prompt("Round: " + num +" Make a choice, rock, paper, or scissors", "rock"));
-    if (humChoice === "rock") {
+    let humChoice = prompt("Round: " + num +" Make a choice, rock, paper, or scissors", "rock");
+    if (humChoice.toLowerCase() === "rock") {
         humChoice = 0;
-    } else if (humChoice === "paper") {
+    } else if (humChoice.toLowerCase() === "paper") {
         humChoice = 1;
-    } else if (humChoice === "scissors") {
+    } else if (humChoice.toLowerCase() === "scissors") {
         humChoice = 2;
     } else {
         prompt("Code error");
